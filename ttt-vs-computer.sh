@@ -104,15 +104,15 @@ function read_move {
 
       index=10  # init with nonexistent
       case $input in
-            q) index=0;;
-            a) index=3;;
-            z) index=6;;
-            w) index=1;;
-            s) index=4;;
-            x) index=7;;
-            e) index=2;;
-            d) index=5;;
-            c) index=8;;
+            q/Q) index=0;;
+            a/A) index=3;;
+            z/Z) index=6;;
+            w/W) index=1;;
+            s/S) index=4;;
+            x/X) index=7;;
+            e/E) index=2;;
+            d/D) index=5;;
+            c/C) index=8;;
       esac
 
       if [ "${positions["$index"]}" == "-" ]; then
